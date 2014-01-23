@@ -1,0 +1,14 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+module:testrunner
+
+GET     /favicon.ico                            404
+GET     /static/*filepath                       Static.Serve("static")
+
+GET 	/:id/*title								App.Index
+GET     /                                       App.Index
+
+# Catch all
+*       /:controller/:action                    :controller.:action

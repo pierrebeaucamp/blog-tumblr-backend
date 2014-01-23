@@ -1,0 +1,269 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100,400");
+body {
+  background-color: #f2f2f2;
+  font-size: 20px;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch; }
+  body p, body li, body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200; }
+  body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+header {
+  background-color: #1abc9c;
+  margin-top: -20px;
+  padding-top: 130px;
+  background-position: center center;
+  min-height: 620px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header .navbar {
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    background-color: #16a085;
+    color: white; }
+    header .navbar h1 {
+      margin: 0;
+      margin-top: 3px; }
+  header .container {
+    margin-top: 5em;
+    text-align: center;
+    color: white; }
+    header .container img {
+      max-width: 280px !important;
+      margin-bottom: 2em; }
+    header .container .col-lg-8 {
+      margin-bottom: 2em; }
+      header .container .col-lg-8 h1 {
+        font-size: 4em; }
+      header .container .col-lg-8 h4 {
+        font-size: 2em; }
+    header .container .carousel {
+      overflow: hidden;
+      width: 100%; }
+      header .container .carousel .items {
+        width: 600%;
+        overflow: hidden;
+        list-style: none;
+        position: relative;
+        -moz-animation: carousel 30s infinite;
+        -webkit-animation: carousel 30s infinite;
+        -ms-animation: carousel 30s infinite;
+        animation: carousel 30s infinite; }
+        header .container .carousel .items li {
+          font-size: 1.8em;
+          position: relative;
+          float: left;
+          width: 16.66667%; }
+
+.header-helper {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(178deg, #1abc9c 49px, #f2f2f2 51px); }
+
+@-moz-keyframes carousel {
+  0% {
+    left: 0; }
+
+  14% {
+    left: 0; }
+
+  16% {
+    left: -100%; }
+
+  30% {
+    left: -100%; }
+
+  32% {
+    left: -200%; }
+
+  46% {
+    left: -200%; }
+
+  48% {
+    left: -300%; }
+
+  62% {
+    left: -300%; }
+
+  64% {
+    left: -400%; }
+
+  78% {
+    left: -400%; }
+
+  80% {
+    left: -500%; }
+
+  95% {
+    left: -500%; }
+
+  100% {
+    left: 0; } }
+
+@-webkit-keyframes carousel {
+  0% {
+    left: 0; }
+
+  14% {
+    left: 0; }
+
+  16% {
+    left: -100%; }
+
+  30% {
+    left: -100%; }
+
+  32% {
+    left: -200%; }
+
+  46% {
+    left: -200%; }
+
+  48% {
+    left: -300%; }
+
+  62% {
+    left: -300%; }
+
+  64% {
+    left: -400%; }
+
+  78% {
+    left: -400%; }
+
+  80% {
+    left: -500%; }
+
+  95% {
+    left: -500%; }
+
+  100% {
+    left: 0; } }
+
+@-ms-keyframes carousel {
+  0% {
+    left: 0; }
+
+  14% {
+    left: 0; }
+
+  16% {
+    left: -100%; }
+
+  30% {
+    left: -100%; }
+
+  32% {
+    left: -200%; }
+
+  46% {
+    left: -200%; }
+
+  48% {
+    left: -300%; }
+
+  62% {
+    left: -300%; }
+
+  64% {
+    left: -400%; }
+
+  78% {
+    left: -400%; }
+
+  80% {
+    left: -500%; }
+
+  95% {
+    left: -500%; }
+
+  100% {
+    left: 0; } }
+
+@keyframes carousel {
+  0% {
+    left: 0; }
+
+  14% {
+    left: 0; }
+
+  16% {
+    left: -100%; }
+
+  30% {
+    left: -100%; }
+
+  32% {
+    left: -200%; }
+
+  46% {
+    left: -200%; }
+
+  48% {
+    left: -300%; }
+
+  62% {
+    left: -300%; }
+
+  64% {
+    left: -400%; }
+
+  78% {
+    left: -400%; }
+
+  80% {
+    left: -500%; }
+
+  95% {
+    left: -500%; }
+
+  100% {
+    left: 0; } }
+
+article h1, article h2, article h3 {
+  color: #1abc9c;
+  font-weight: 400; }
+article p, article li {
+  line-height: 28px;
+  margin-bottom: 25px;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 0 0 10px;
+  text-align: justify;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  letter-spacing: 1px; }
+article p {
+  display: block; }
+article ul > li:before {
+  content: "• ";
+  color: #555; }
+article li {
+  padding-left: 1em;
+  text-indent: -.7em; }
+
+footer {
+  background-color: #474e5d;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 10px solid black; }
+
+.footer-helper {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(179deg, #f2f2f2 49px, #474e5d 51px); }
