@@ -7,7 +7,7 @@ import "encoding/json"
 import "html/template"
 import "github.com/robfig/revel"
 
-const baseurl string = "http://api.tumblr.com/v2/blog/tumblr.pierrebeaucamp.com/posts?api_key=Grsk0wqWNw9IjnCTmKGfxodp1vsk1jneVUhAfK8F5SKyrdEpcy"
+const baseurl string = "http://api.tumblr.com/v2/blog/tumblr.pierrebeaucamp.com/posts?api_key=SUPERTUMBLRPRIVATEKEY"
 
 type Blog struct{ *revel.Controller }
 
