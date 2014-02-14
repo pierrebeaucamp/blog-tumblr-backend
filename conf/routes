@@ -7,8 +7,8 @@ module:testrunner
 GET     /favicon.ico                            404
 GET     /static/*filepath                       Static.Serve("static")
 
-GET 	/:id/*title								App.Index
-GET     /                                       App.Index
+GET     /ajax/:id                               Blog.Ajax 								
+GET 	/:id/*title	                            Blog.Permalink
+GET     /                                       Blog.Index
 
-# Catch all
-*       /:controller/:action                    :controller.:action
+

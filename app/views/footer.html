@@ -1,11 +1,11 @@
-  		{{if eq .RunMode "dev"}}
-    		{{template "debug.html" .}}
-  		{{end}}
+  		    {{if eq .RunMode "dev"}}
+    		  {{template "debug.html" .}}
+  		    {{end}}
+        </main>
 
-		<div class="footer-helper"></div>
  		<footer></footer>
- 		<script type="application/dart" src="static/main.dart"></script>
- 		<script src="static/dart.js"></script>
-
+ 		<script type="application/dart" src="static/dart/main.dart"></script>
+ 		<script src="static/dart/packages/browser/dart.js"></script>
+ 		
   	</body>
 </html>
