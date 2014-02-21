@@ -4,5 +4,6 @@ routes/
 *.sublime-project
 *.sublime-workspace
 pubspec.yaml
+pubspec.lock
 *.scss
 .gitignore
