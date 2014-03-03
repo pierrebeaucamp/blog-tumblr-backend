@@ -54,7 +54,7 @@ func get_menu() map[string]string {
 	for i := range message["response"].(map[string]interface{})["posts"].([]interface{}) {
 		title := simplify_message(message, "title", i)
 		url := simplify_message(message, "url", i)
-		menu[title] = url
+		menu[title] = strings.Split(url, "/")[1]
 	}
 	return menu
 }
@@ -64,8 +64,15 @@ func (c Blog) Permalink(id string) revel.Result {
 	post = get_post(baseurl + "&limit=1&id=" + id)
 	menu = get_menu()
 	title := post["title"]
+	url := post["url"]
 	content := template.HTML(post["content"])
-	return c.Render(title, content, menu)
+	return c.Render(title, content, menu, url, id)
+}
+
+func (c Blog) NoJsRedirect(id string) revel.Result {
+	var post map[string]string
+	post = get_post(baseurl + "&limit=1&id=" + id)
+	return c.Redirect(post["url"])
 }
 
 func (c Blog) Index() revel.Result {
@@ -78,4 +85,18 @@ func (c Blog) Ajax(id string) revel.Result {
 	var post map[string]string
 	post = get_post(baseurl + "&limit=1&id=" + id)
 	return c.RenderJson(post)
+}
+
+func (c Blog) About() revel.Result {
+	var menu map[string]string
+	title := "About me"
+	menu = get_menu()
+	return c.Render(menu, title)
+}
+
+func (c Blog) Thanks() revel.Result {
+	var menu map[string]string
+	title := "Thank you!"
+	menu = get_menu()
+	return c.Render(menu, title)
 }

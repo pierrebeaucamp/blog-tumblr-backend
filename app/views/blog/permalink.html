@@ -1,8 +1,10 @@
 {{template "header.html" .}}
 
-<article class="col-lg-8 col-lg-push-2">
+<article class="col-lg-10 col-lg-push-1" data-url="{{.url}}">
     <h1 class="text-center">{{.title}}</h1>
     <p>{{.content}}</p>
 </article>
+
+<div class="comments"></div>
 
 {{template "footer.html" .}}

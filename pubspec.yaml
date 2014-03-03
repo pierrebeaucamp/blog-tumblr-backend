@@ -1,0 +1,4 @@
+name: blog
+description: Personal Blog
+dependencies:
+	browser: any

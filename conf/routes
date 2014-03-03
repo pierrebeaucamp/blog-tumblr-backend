@@ -7,8 +7,11 @@ module:testrunner
 GET     /favicon.ico                            404
 GET     /static/*filepath                       Static.Serve("static")
 
-GET     /ajax/:id                               Blog.Ajax 								
+GET     /about-me                               Blog.About
+GET     /thank-you                              Blog.Thanks
+GET     /ajax/:id                               Blog.Ajax 							
 GET 	/:id/*title	                            Blog.Permalink
+GET     /:id                                    Blog.NoJsRedirect
 GET     /                                       Blog.Index
 
 

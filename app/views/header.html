@@ -14,17 +14,22 @@
     <link rel="stylesheet" type="text/css" href="/static/scss/main.css">
 </head>  
 <body>
-    <nav id="big-nav" class="main-nav hidden-xs pull-left">
+    <nav id="nav" class="main-nav pull-left hidden-print">
         <ul class="text-center">
             <li class="logo"><a href="/">
                     <img src="//api.tumblr.com/v2/blog/tumblr.pierrebeaucamp.com/avatar/128" alt="Pierre Beaucamp" class="img-circle">
             </a></li>
             <li class="logo"><a href="/">Pierre Beaucamp</a></li>
-            <li><hr></li>
+            <li class="placeholder"></li>
             {{range $post, $link := .menu}}
-                <li><a href="{{$link}}">{{$post}}</a></li>
+                <li><a class="link" href="/{{$link}}" data-id="{{$link}}">{{$post}}</a></li>
             {{end}}
         </ul>
+        <a href="/about-me" id="about" class="text-center">About me</a>
     </nav>
-    <nav id="small-nav" class="main-nav clearfix visible-xs"></nav>
-    <main class="container clearfix">
+    <main class="clearfix">
+        <div class="toggle-wrap hidden-print">
+            <a href="#nav" class="open-menu">☰</a>
+            <a href="#" class="close-menu">☰</a>
+        </div>
+        <div class="container">
