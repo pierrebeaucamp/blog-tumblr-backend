@@ -13,6 +13,8 @@
         </footer>
 
  		<script type="application/dart" src="/static/dart/main.dart"></script>
- 		<script src="/static/dart/packages/browser/dart.js"></script>
+ 		<script>
+            (function(){if(navigator.userAgent.indexOf("(Dart)")===-1){var e=document.getElementsByTagName("script");var t=e.length;for(var n=0;n<t;++n){if(e[n].type=="application/dart"){if(e[n].src&&e[n].src!=""){var r=document.createElement("script");r.src=e[n].src.replace(/\.dart(?=\?|$)/,".dart.js");var i=e[n].parentNode;document.currentScript=r;i.replaceChild(r,e[n])}}}}})()
+        </script>
   	</body>
 </html>
