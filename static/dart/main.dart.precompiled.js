@@ -4179,7 +4179,7 @@ return typeof a==="object"&&a!==null&&!!z.$iscv}}}],["","main.dart",,F,{
 bh:function(a,b){var z
 if(b){z=J.pP($.z0())
 z.h(z,"way-down")}z=J.x(a)
-if(!z.n(a,"about-me")&&!z.n(a,"thank-you"))W.Kn(C.xB.g("http://127.0.0.1:9000/ajax/",a),null,null).ml(new F.LW(b))},
+if(!z.n(a,"about-me")&&!z.n(a,"thank-you"))W.Kn(C.xB.g("https://pierrebeaucamp.com/ajax/",a),null,null).ml(new F.LW(b))},
 Jk:[function(a){var z=J.P5(J.l2(a))
 F.bh(z.V5.MW.getAttribute("data-"+z.kZ("id")),!0)},"call$1","np",2,0,9],
 dM:[function(a){var z,y,x,w,v,u
