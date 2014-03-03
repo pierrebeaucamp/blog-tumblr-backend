@@ -30,7 +30,7 @@ void render(String id, bool push) {
             title.text = "Pierre Beaucamp | " + j["title"];
             if (push) {
                 window.history.pushState(null, j["title"], j["url"] + "#nav");
-                container.classes.remove('way-down');
+                new Timer(new Duration(milliseconds: 500), () => container.classes.remove('way-down'));
             }
         });
     }
