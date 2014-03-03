@@ -4252,7 +4252,7 @@ if(y==null?w==null:y===w){y=J.pP($.cf())
 y.h(y,"hidden")}else{y=J.pP($.cf())
 y.Rz(y,"hidden")}$.ML().textContent=C.xB.g("Pierre Beaucamp | ",x.t(z,"title"))
 if(this.a){window.history.pushState(null,x.t(z,"title"),J.WB(x.t(z,"url"),"#nav"))
-P.rT(P.k5(0,0,0,500,0,0),new F.Sa())}}},
+P.rT(P.k5(0,0,0,300,0,0),new F.Sa())}}},
 Sa:{
 "":"Tp:10;",
 call$0:function(){var z=J.pP($.z0())
