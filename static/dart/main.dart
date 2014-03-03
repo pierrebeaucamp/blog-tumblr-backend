@@ -20,7 +20,7 @@ List<String> decodeJson(String response) {
 void render(String id, bool push) {
     push ? container.classes.add('way-down') : null;
     if (id != "about-me" && id != "thank-you") {
-        HttpRequest.getString("http://127.0.0.1:9000/ajax/" + id).then((response) {
+        HttpRequest.getString("https://pierrebeaucamp.com/ajax/" + id).then((response) {
             var j = decodeJson(response);
             container.children.clear();
             container.nodes.add(new DocumentFragment.html('<h1 class="text-center">' + j["title"] + '</h1>'));
